@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Trading Charts Dashboard</title>
+    <script src="https://unpkg.com/lightweight-charts@4.0.0/dist/lightweight-charts.production.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1>📈 Trading Charts</h1>
+                <div class="header-controls">
+                    <label for="chart-count">Charts:</label>
+                    <select id="chart-count" class="chart-count-selector">
+                        <option value="1">1 Chart</option>
+                        <option value="2">2 Charts</option>
+                        <option value="4">4 Charts</option>
+                        <option value="6">6 Charts</option>
+                        <option value="8">8 Charts</option>
+                    </select>
+                    <span class="provider-badge" id="provider-badge">Provider: --</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Grid Container -->
+        <main class="charts-container" id="charts-container">
+            <!-- Charts will be dynamically inserted here -->
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
